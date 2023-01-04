@@ -4,7 +4,7 @@ from DavinciGPT import app
 
 
 @app.on_message(filters.command("start"))
-async def start_cmd(client, message: Message, _):
+async def start_cmd(_, message: Message):
     await message.reply_text(
         """
 Hello, I am DavinciGPT, an advance AI bot that uses ChatGPT davinci model. 
