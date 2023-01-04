@@ -9,9 +9,6 @@ loop = asyncio.get_event_loop()
 
 
 async def init():
-    for all_module in ALL_MODULES:
-        importlib.import_module("DavinciGPT.plugins" + all_module)
-    LOGGER.info("Successfully Imported Modules ")
     try:
         await app.send_message(LOG_GROUP_ID, "DavinciGPT Started.")
     except:
@@ -21,5 +18,8 @@ async def init():
 if __name__ == "__main__":
     LOGGER.info("DavinciGPT is starting.")
     app.start()
+    for all_module in ALL_MODULES:
+        importlib.import_module("DavinciGPT.plugins" + all_module)
     loop.run_until_complete(init())
+    LOGGER.info("Successfully Imported Modules ")
     LOGGER.info("DavinciGPT started.")
