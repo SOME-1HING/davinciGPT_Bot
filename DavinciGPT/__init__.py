@@ -1,3 +1,3 @@
-from bot import Bot
+from DavinciGPT.bot import Bot
 
 app = Bot()
