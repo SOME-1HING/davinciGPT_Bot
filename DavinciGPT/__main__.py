@@ -13,7 +13,6 @@ async def init():
     for all_module in ALL_MODULES:
         importlib.import_module("DavinciGPT.plugins" + all_module)
     LOGGER.info("Successfully Imported Modules ")
-    await idle()
 
 
 if __name__ == "__main__":

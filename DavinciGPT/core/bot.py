@@ -16,7 +16,7 @@ class Bot:
         await self.bot.start()
 
         try:
-            await self.bot.send_message(LOG_GROUP_ID, "Assistant Started.")
+            await self.bot.send_message(LOG_GROUP_ID, "DavinciGPT Started.")
         except:
             LOGGER.error("Bot wasn't able to send message in the log group.")
 
