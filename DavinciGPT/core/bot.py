@@ -1,5 +1,5 @@
 from DavinciGPT.config import *
-from pyrogram import Client, filters
+from pyrogram import Client
 from DavinciGPT.logger import LOGGER
 import sys
 
@@ -16,9 +16,8 @@ class Bot:
         await self.bot.start()
 
         try:
-            await self.bot.send_message(LOG_GROUP_ID, "Assistant Started")
+            await self.bot.send_message(LOG_GROUP_ID, "Assistant Started.")
         except:
-            LOGGER.error("Bot wasn't able to send message in the log group/")
-            sys.exit()
+            LOGGER.error("Bot wasn't able to send message in the log group.")
 
         LOGGER.info("DavinciGPT started.")
