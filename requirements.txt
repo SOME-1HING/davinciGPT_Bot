@@ -3,3 +3,4 @@ aiofiles
 aiohttp
 pyrogram
 davinciGPT
+TgCrypto
