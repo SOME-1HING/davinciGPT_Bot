@@ -1,6 +1,6 @@
-from config import *
+from DavinciGPT.config import *
 from pyrogram import Client, filters
-from logger import LOGGER
+from DavinciGPT.logger import LOGGER
 import sys
 
 
