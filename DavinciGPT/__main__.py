@@ -5,6 +5,8 @@ from DavinciGPT import app
 from DavinciGPT.logger import LOGGER
 from DavinciGPT.config import LOG_GROUP_ID
 
+from DavinciGPT.plugins.start import start_cmd
+
 loop = asyncio.get_event_loop()
 
 
